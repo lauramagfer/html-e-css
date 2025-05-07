@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste HTML e CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>QUIZ CITOLOGIA</h1>
+        <p>Um quiz que te ajudará a descobrir o quanto você sabe sobre os mistérios da vida!</p>
+    </header>
+    <main>
+        <!--Introdução-->
+        <section>
+            <p class="int">A Citologia é uma grande área da Biologia que visa compreender as células, suas estruturas e funções.</p>
+            <p class="int">Através desse questionário, você poderá testar seus conhecimentos e aprender mais sobre essa fascinante matéria.</p>
+            <p class="int">Divirta-se!</p>
+        </section>
+        <section>
+            <h2>Pergunta 1: As células podem ser divididas em quantos tipos?</h2>
+            <form>
+                <input type="radio" name="p1" id="p1" value="p1a">
+                <label for="p1">3 tipos: Procariontes, Ribossomos e Lisossomos</label> <br>
+                <input type="radio" name="p1" id="p1" value="p1b">
+                <label for="p1">2 tipos: Eucariontes e Procariontes</label> <br>
+                <input type="radio" name="p1" id="p1" value="p1c">
+                <label for="p1">2 tipos: Mitocôndrias e Peroxissomos</label> <br>
+                <input type="radio" name="p1" id="p1" value="p1d">
+                <label for="p1">3 tipos: Eucariontes, Procariontes e Peroxissomos</label>
+            </form>    
+        </section>
+        <section>
+            <h2>Pergunta 2: Marque apenas as opções que nomeiam as organelas presentes no citoplasma:</h2>
+            <input type="checkbox" name="p2" id="p2" value="p2i">
+            <label for="p2">Complexo de Golgi</label>
+            <input type="checkbox" name="p2" id="p2" value="p2ii">
+            <label for="p2">Mitocôndria</label>
+            <input type="checkbox" name="p2" id="p2" value="p2iii">
+            <label for="p2">Retículo Endoplasmático</label>
+            <input type="checkbox" name="p2" id="p2" value="p2iv">
+            <label for="p2">Bile</label>
+            <input type="checkbox" name="p2" id="p2" value="p2v">
+            <label for="p2">Brônquios</label>
+            <input type="checkbox" name="p2" id="p2" value="p2vi">
+            <label for="p2">Peroxissomos</label>
+            <input type="checkbox" name="p2" id="p2" value="p2vii">
+            <label for="p2">Ribossomos</label>
+            <input type="checkbox" name="p2" id="p2" value="p2viii">
+            <label for="p2">Lisossomos</label>
+        </section>
+        <section>
+            <h2>Pergunta 3: A primeira vez que se utilizou o termo "célula" foi na publicação de Robert Hooke, <em>"Micrographia"</em>. Informe a data em que isso ocorreu:</h2>
+            <input type="date" name="date" id="date" value="date">
+        </section>
+        <section>
+            <h2>Pergunta 4: Considere se a afirmação a seguir é verdadeira ou falsa:</h2>
+            <p id="p4"><em>"A principal característica da célula procarionte é a ausência de carioteca delimitando o núcleo celular. O núcleo da célula procarionte não é individualizado. Já as células eucariontes são mais complexas. Essas possuem carioteca individualizando o núcleo, além de vários tipos de organelas."</em></p>
+            <form>
+                <select name="pgt4" id="pgt4">
+                    <option selected disabled value="">Selecione</option>
+                    <option value="pgt4i">Verdadeiro</option>
+                    <option value="pgt4ii">Falso</option>
+                </select>
+            </form>
+        </section>
+        <section>
+            <h2>Pergunta 5: Escreva o que significa a sigla <em>DNA</em>(em português).</h2>
+            <label for="p5"></label>
+            <input type="textarea" name="p5" id="p5" rows="20"cols="40" placeholder="Digite aqui......">
+        </section>
+        <section>
+            <h2>Pergunta 6: Existem quantos tipos de Retículo Endoplasmático? Informe no campo abaixo (com o algarismo) :</h2>
+            <label for="p6"></label>
+            <input type="number" name="p6" id="p6" placeholder="Escolha o número">
+        </section>
+        <section>
+            <h2>Pergunta 7: Qual organela está representada na figura abaixo?</h2>
+            <img src="p7.png" alt="desenho do organela">
+            <form>
+                <select name="p7" id="p7">
+                    <option selected disabled value="">Selecione</option>
+                    <option value="p7i">Mitocôndria</option>
+                    <option value="p7ii">Ribossomos</option>
+                    <option value="piii">Lisossomos</option>
+                    <option value="piv">Complexo Golgiense</option>
+                </select>
+            </form>
+        </section>
+        <form>
+            <button>Enviar</button>
+        </form>
+        <section class="term">
+            <h2>TABELA DE DESEMPENHO</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pontuação</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>6-7</td>
+                        <td>Excelente!</td>
+                    </tr>
+                    <tr>
+                        <td>5-4</td>
+                        <td>Bom!</td>
+                    </tr>
+                    <tr>
+                        <td>2-3</td>
+                        <td>Você tem potencial para melhorar suas habilidades!</td>
+                    </tr>
+                    <tr>
+                        <td>0-1</td>
+                        <td>Sempre é possível alcançar uma melhor pontuação! Nunca desista</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>    
+        <section class="term">
+            <h2>Verifique suas Respostas</h2>
+            <details>
+                <summary>Clique Aqui!</summary>
+                <ol>
+                    <li>2 tipos: Eucariontes e Procariontes.</li>
+                    <li>Complexo de Golgi, Mitocôndria, Retículo Endoplasmático, Peroxissomos, Ribossomos, Lisossomos.</li>
+                    <li>30 de julho de 1665.</li>
+                    <li>Verdadeira</li>
+                    <li>Ácido Desoxirribonucleico</li>
+                    <li>2 tipos(Liso e Rugoso)</li>
+                    <li>Mitocôndria</li>
+                </ol>
+            </details>
+        </section>
+        <section class="cad">
+            <h2>CADASTRO</h2>
+            <p id="q">Não se esqueça de se cadastrar para realizar mais formulários como esse!</p>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <form>
+                    <div class="nome">
+                        <label for="n">Nome</label>
+                        <input type="text" name="n" id="n" placeholder="Digite seu nome....">
+                    </div>
+                    <div class="email">
+                        <label for="n">E-mail</label>
+                        <input type="email" name="e" id="e" placeholder="Digite seu e-mail....">
+                    </div>
+                    <div class="senha">
+                        <label for="s">Senha</label>
+                        <input type="password" name="s" id="s" placeholder="Digite sua senha....">
+                    </div>
+                </form>
+            </fieldset>
+        </section>
+     </main>
+    <footer>&copy;Todos os direitos reservados.</footer>
+</body>
+</html>
